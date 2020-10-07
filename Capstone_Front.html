@@ -1,0 +1,100 @@
+<!-- This part of the project is based on the main section of the website -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SpaceVolture </title>
+
+	<!-- Adding Bootsrap for better looks -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	 <!-- Adding Font from Google Fonts -->
+	 <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+
+	<!-- Styling section -->
+	<style>
+		body {
+			font-family: 'Barlow', sans-serif;
+			text-align: center;
+			/* Background from https://uigradients.com/ */
+			background: #00c6ff;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			opacity: 0; 
+            transition: opacity 3s;
+		}
+
+		h3 {
+			color: white;
+    		line-height: 1.2 ;
+    		text-align: center;
+    		background: lightslategrey;
+   			margin: 0;
+    		font-weight: normal ;
+   			text-transform: uppercase; 
+    		padding-top: 25px;
+			padding-bottom: 25px;   
+			letter-spacing: 1px;
+		}
+		
+		.options {
+			background: white;
+    		height: 35px;
+    		text-align: center;
+		}
+
+		#message {
+    		width: 20%;
+    		display: inline-block;
+		}
+
+		/* Link's Styling */
+		a{		
+			border: none;
+    		background: none;
+    		text-transform: uppercase;
+    		font-weight: 680;
+			color: lightslategrey;
+    		letter-spacing: 1px;
+    		font-size: inherit;
+			transition: all 0.5s;  /* This gives the fading animation*/
+			padding-top: 15px;
+			padding-left:15px ;
+			padding-right:15px ;
+			padding-bottom:9px ;
+			
+   			 /* To work in most of the platform as possible */
+    		-webkit-transition: all 0.5s;
+    		-moz-transition: all 0.5;
+			text-decoration: none;
+			position: relative;
+			top: 5px;
+		}
+
+		a:hover {
+			color:white;
+			background: lightslategrey;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+
+<!-- Main part of the web site -->
+<body onload="document.body.style.opacity='1'">
+
+	<!-- Header -->
+	<h3> Welcome to   <br>
+		your fitness place</h3>
+
+		<!-- Log in  -->
+	<div class="options">
+		<a href="Capstone_Login.html"> LogIn </a>
+		<span id="message"> </span>
+		<a href="Create_account.html"> Create Account </a>
+</div>
+
+
+</body>
+</html>
